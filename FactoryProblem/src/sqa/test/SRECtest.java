@@ -15,7 +15,7 @@ class SRECtest {
 	@ParameterizedTest
 	@CsvFileSource(files = "src/TestCSV/SREC.csv", numLinesToSkip = 1)
 	
-	void calculateIncome(int num_impeller, int num_motor, int num_cover, Double expectedResult) {
+	void CalculateIncomeTest(int num_impeller, int num_motor, int num_cover, Double expectedResult) {
 		Double TotalIncome = income.calculateIncome(num_impeller, num_motor, num_cover);
 		assertEquals(expectedResult, TotalIncome);
 	}
